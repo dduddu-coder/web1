@@ -1,27 +1,78 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>WEB - welcome</title>
-  <meta charset="utf-8">
-</head>
+list를 줄여 <li>로 표현하며 Ctrl+alt를 누른 후 아래 방향키를   누르면 문단을 다중 선택 할 수 있다
 
-<body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS </a></li>
-    <li><a href="3.html">JavaScript </a></li>
-  </ol>
+li태그의 부모태그인 ul태그로 그룹을 지어 구분해준다
+만일 ol태그를 부모태그로 사용하면 자동으로 리스트 앞에 번호가 매겨짐 ul태그는 직접 번호를 입력해야 한다
+ol -> ordered list / ul -> unordered lis
+
+anchor(닻)의 줄임인 a태그는 링크를 연결하는 역할을 함
+Hypertext Reference의 줄임말 href에 연결 사이트를 삽입하면 된다
   
-  <!-- list를 줄여 <li>로 표현하며 Ctrl+alt를 누른 후 아래 방향키를   누르면 문단을 다중 선택 할 수 있다 -->
-  <!-- li태그의 부모태그인 ul태그로 그룹을 지어 구분해준다
-  만일 ol태그를 부모태그로 사용하면 자동으로 리스트 앞에 번호가 매겨짐
-  ol -> ordered list / ul -> unordered list -->
-  
-  <h2>WEB</h2>
-  <p>[스포츠서울 이용수기자] 걸그룹 레인보우 출신 조현영과 딘딘의 사이가 조명된 가운데 두 사람의 학창 시절 모습도 새삼 눈길을 끈다.
-  </p>
-  
- 
-</body>
-</html>
+<img src="고양.jpg" width="100%"> 에서 src는 source를 의미하며
+src="고양.jpg" width="100%"는 attribute 즉 속성을 의미하며 위치는   변경해도 무관하며 태그 이름만으로는 정보가 부족할 때 속성을   추가하여 더 많은 의미를 추가하는 것
+
+view -> toggle soft wrap누르면 화면에 맞게 글자가 조절 됨
+
+<strog></strong> 문자 굵게 혹은 <b></b>
+<u></u> 문자 밑줄 긋기 -->
+
+h태그는 제목을 나타내는 태그  h1~h6까지 있으며 줄바꿈, 폰트 크기가 변화한다 -->
+<!-- 예) <h1>This is heading 1</h1>
+         <h2>This is heading 2</h2>
+         <h3>This is heading 3</h3>
+         <h4>This is heading 4</h4>
+         <h5>This is heading 5</h5>
+         <h6>This is heading 6</h6> -->
+
+<br> 줄바꿈 태
+<p></p>  둘 다 줄바꿈 태그이지만 P는 좀 더 가치있는 의미가 있는 페이지로 만든다고 한다 (검색엔진시스템에 의해서 코딩작업이 들어간 페이지가 더 상위에 노출 됨). 정보로서 의미가 더 있다? 그런데 br태그는 단순 줄바꿈 태그임 하지만 P태그는 여러번 쓴다고 해서 줄바꿈을 많이 할 수 없지만 br은 가능하다 그래서 p태그는 단락을 나누는 자율성이 br태그보다는 떨어진다 하지만 문단을 나눌 때는 P태그를 사용하는 것을 권장함 하지만 css로 넘어가면 p의 단락을 사이즈를 정해 나누는 것이 가능하다. 그게 <p style="margin-top:45px;"> 인데 위 단략에 45px의 여백을 주겠다는 css태그 나중에 배울 것
+
+표 만드는 태그 예시
+<table>
+    <tr>
+        <td>head</td>
+        <hd>98.1%</td>
+    </tr>
+    <tr>
+        <td>body</td>
+        <td>97.9%</td>
+    </tr>
+    <tr>
+        <td>html</td>
+        <td>97.9%</td>
+    </tr>
+</table>
+
+16강
+인터넷와 웹의 차이
+인터넷이 운영체제라면 웹은 어떤 하나의 운영체제
+인터넷 안에 웹, 이메일 등의 수많은 서비스가 포함된다
+
+17강
+Web browser -> client / Web server -> server
+
+18강
+웹서버가 연결된 컴퓨터 한 대 한 대를 host라고 한다
+이러한 호스트를 빌려주는 업체를 웹 호스팅 업체라고 한다
+깃허브를 사용하세요 무료임
+무료 사이트를 검색하고 싶다면 free stactic web hosting
+*추천 사이트는?
+-bitballoon
+-neocities
+-amazons3
+-google cloud storage
+-azure blob
+
+19강 아피치 연결
+http://127.0.0.1/index.html 로 아파치 사이트에서 html로 연결 
+127.0.0.1은 아이피 주소이며 웹 브라우저가 설치되어있는 컴퓨터를 가리키는 주소이다
+index.html을 검색하면 내 컴퓨터에 있는 html 정보를 불러옴
+C:\Bitnami\wampstack-7.3.22-0\apache2\htdocs 이 위치에서 html파일 확인
+http = Hyper Text Transfer Protocol
+
+아파치나 갓 허브를 이용하면 어디서든 웹 브라우저를 열 수 있지만 내 컴퓨터에서만 작업한 경우 다른 사람은 열 수 없다 하지만 같은 와이파이를 사용할 경우 아이피 주소를 통해서 연결 할 수 있음
+
+부록 코드의 힘
+영상을 불러 넣기 위해서는 사이트에 업로드 되어 있는 영상의 임베드나 퍼가기에서 코드를 복사해서 붙여넣으면 됨
+
+댓글추가기능
+라이브리(LibeRe)나 디스커스(Disqus)에서 복붙하라고 한다
